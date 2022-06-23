@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_background"
+    android:orientation="vertical"
+    tools:context=".empresa.agregarEstab.AgregarLocalFragment">
+
+
+    <ImageView
+        android:id="@+id/b_wave15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type3" />
+
+    <ImageView
+        android:id="@+id/b_wave16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type1" />
+
+    <ImageView
+        android:id="@+id/b_wave17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnFotoPrincipalLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/black"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/googlesans_medium"
+                        android:text="Foto Local"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/imagenPrincipal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        app:srcCompat="@drawable/fotolocalicon" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/switchREstaAbierto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:gravity="center"
+                    android:minHeight="48dp"
+                    android:text="EstaAbierto"
+                    android:textColor="@color/gris_fondo"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/switchRVisibilidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:gravity="center"
+
+                    android:minHeight="48dp"
+                    android:text="Visibilidad"
+                    android:textColor="@color/gris_fondo"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/cNombreLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="4dp"
+                android:background="@drawable/campo_fondo2"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Nombre:"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/cProvincia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/campo_fondo2"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:hint="Provincia:"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="18sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/cMunicipio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/campo_fondo2"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:hint="Municipio:"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/cCalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="4dp"
+                android:background="@drawable/campo_fondo2"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Calle:"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/cHoraAperturaLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="4dp"
+
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/campo_fondo2"
+                    android:clickable="true"
+                    android:drawableTint="@color/black"
+                    android:focusable="false"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:hint="Apertura:"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/cHoraCierreLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/campo_fondo2"
+                    android:clickable="true"
+                    android:drawableTint="@color/black"
+                    android:focusable="false"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:hint="Cierre:"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/cServiciosLocal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/campo_fondo2"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/googlesans_medium"
+                        android:hint="Servicio:"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/cEstablecerPrecio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/campo_fondo2"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/googlesans_medium"
+                        android:hint="Precio:"
+                        android:inputType="textPersonName|numberDecimal"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAgregarServicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/googlesans_black"
+                    android:minHeight="48dp"
+                    android:text="Agregar"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnVerServiciosAgregados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/googlesans_black"
+                android:minHeight="48dp"
+                android:padding="15dp"
+                android:text="Ver Servicios"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/cPublicoLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/campo_fondo2"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Publico:"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/cIntervaloEntreCitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="4dp"
+                android:background="@drawable/campo_fondo2"
+                android:clickable="true"
+                android:drawableTint="@color/black"
+                android:focusable="false"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Tiempo entre citas:"
+                android:inputType="time"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/cTiempoInicioComida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/campo_fondo2"
+                    android:clickable="true"
+                    android:drawableTint="@color/black"
+                    android:focusable="false"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:hint="Inicio Comida:"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/cTiempoFinComida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/campo_fondo2"
+                    android:clickable="true"
+                    android:drawableTint="@color/black"
+                    android:focusable="false"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:hint="Fin Comida:"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCrearLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/googlesans_black"
+                android:minHeight="48dp"
+                android:padding="15dp"
+                android:text="Registrar Local"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

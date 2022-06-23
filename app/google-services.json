@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "488940431819",
+    "project_id": "coiffearch",
+    "storage_bucket": "coiffearch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488940431819:android:44a9728ae261ae5e5d6e4e",
+        "android_client_info": {
+          "package_name": "com.example.coiffearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488940431819-kj8vhg4nnjnk8rrflplm4totvils5i4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC95464YhwGGgFr5Wq0Vim2l0x5WFpiXYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488940431819-kj8vhg4nnjnk8rrflplm4totvils5i4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

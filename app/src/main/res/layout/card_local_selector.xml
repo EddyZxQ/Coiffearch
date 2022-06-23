@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartaMisCasas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="@color/BLANCO"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp">
+
+
+    <GridLayout
+        android:id="@+id/layuttt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+        <ImageView
+            android:id="@+id/imgLocalC"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:scaleType="matrix"
+            app:srcCompat="@drawable/icons8_imagen_100" />
+
+        <TextView
+            android:id="@+id/idNombreLocalC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:fontFamily="@font/googlesans_medium"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="rnjewgowjghoiwhjwpo09j" />
+
+    </GridLayout>
+
+
+</androidx.cardview.widget.CardView>

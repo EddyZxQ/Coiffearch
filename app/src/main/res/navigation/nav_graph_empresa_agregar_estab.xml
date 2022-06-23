@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_empresa_agregar_estab"
+    app:startDestination="@id/crearLocalFragment">
+
+    <fragment
+        android:id="@+id/crearLocalFragment"
+        android:name="com.example.coiffearch.empresa.agregarEstab.AgregarLocalFragment"
+        android:label="fragment_crear_local"
+        tools:layout="@layout/fragment_agregar_local" >
+        <action
+            android:id="@+id/action_crearLocalFragment_to_galleriaFragment"
+            app:destination="@id/galleriaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/galleriaFragment"
+        android:name="com.example.coiffearch.empresa.agregarEstab.GalleriaFragment"
+        android:label="fragment_galleria"
+        tools:layout="@layout/fragment_galleria" />
+
+</navigation>

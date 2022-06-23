@@ -1,0 +1,116 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.coiffearch"
+        minSdk 28
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    viewBinding{
+       enabled true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.4.2'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation platform('com.google.firebase:firebase-bom:29.0.3')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    implementation platform('com.google.firebase:firebase-bom:29.0.3')
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
+    //CLOUD FIRESTORE
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+
+    //FIREBASE STORAGE
+    implementation 'com.google.firebase:firebase-storage-ktx'
+
+    //LIFECYCLE - VIEWMODEL
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+
+    //LIFECYCLE - LIVEDATA
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1"
+
+    //FRAGMENT
+    implementation "androidx.fragment:fragment-ktx:1.4.1"
+
+    //ACTIVITY
+    implementation "androidx.activity:activity-ktx:1.4.0"
+
+    //CORRUTINAS
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+
+    //CARROSUSEL
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'me.relex:circleindicator:2.1.6'
+    implementation 'org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.0.6'
+
+    //CALENDAR
+    implementation 'com.michalsvec:single-row-calednar:1.0.0'
+
+
+
+
+    //Notificacion
+    //noinspection GradleCompatible
+  //  implementation "com.android.support:support-compat:28.0.0"
+
+    //Material Google
+    implementation 'com.google.android.material:material:1.5.0'
+
+
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
+    implementation "androidx.drawerlayout:drawerlayout:1.1.1"
+
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+
+    // Fragment
+    implementation "androidx.fragment:fragment-ktx:1.4.1"
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.4.2")
+    implementation("androidx.navigation:navigation-ui-ktx:2.4.2")
+
+
+}

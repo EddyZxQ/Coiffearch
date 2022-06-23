@@ -1,0 +1,126 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Coiffearch" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/MORADO</item>
+        <item name="colorPrimaryVariant">@color/MORADO</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/MORADO</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor"  tools:targetApi="l">@color/MORADO</item>
+
+        
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ExampleNavigation.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Status Bar Azul -->
+    <style name="Theme.statusBarMorada" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/MORADO_OBSCURO</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:colorControlActivated">@color/black</item>
+
+    </style>
+
+    <!-- Status Bar Gris -->
+
+    <style name="Theme.statusBarBlanca" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor"  tools:targetApi="l">@color/BLANCO</item>
+
+        <item name="colorAccent">@color/MORADO</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="Theme.statusBarGradientPurple" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor"  tools:targetApi="l">@color/MORADO_GRADIENT_CLARO</item>
+
+        <item name="colorAccent">@color/MORADO</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="Theme.statusBarGradientPurpleOscuro" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor"  tools:targetApi="l">@color/MORADO_GRADIENT_OSCURO</item>
+
+        <item name="colorAccent">@color/MORADO</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Theme.statusMorado2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor"  tools:targetApi="l">@color/MORADO</item>
+
+        <item name="colorAccent">@color/MORADO</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/MORADO</item>
+        <item name="colorControlActivated">@color/MORADO</item>
+        <item name="android:textColor">@color/MORADOOSCURO</item>
+    </style>
+
+    <style name="btns">
+        <item name="colorPrimary">@color/AZULCLARO</item>
+    </style>
+
+
+    <style name="textoMoradoOscuro">
+
+        <item name="colorAccent">@color/MORADOOSCURO</item>
+        <item name="android:editTextColor">@color/MORADOOSCURO</item>
+        <item name="android:textColorHint">@color/MORADOOSCURO</item>
+    </style>
+
+
+    <style name="desplegable">
+        <item name="colorControlNormal">@color/MORADOOSCURO</item>
+        <item name="colorControlActivated">@color/MORADOOSCURO</item>
+    </style>
+
+    <style name="outline">
+        <item name="colorAccent">@color/MORADOOSCURO</item>
+        <item name="boxStrokeColor">@color/MORADOOSCURO</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/MORADOOSCURO</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="alerta">
+        <item name="colorPrimary">@color/BLANCO</item>
+        <item name="colorPrimaryVariant">@color/BLANCO</item>
+        <item name="colorOnPrimary">@color/MORADOOSCURO</item>
+    </style>
+
+    <style name="DialogThemeServicios" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/MORADOOSCURO</item>
+        <item name="android:textColor">@color/MORADOOSCURO</item>
+    </style>
+
+    <style name="MySnackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:layout_margin">70dp</item>
+    </style>
+
+
+
+</resources>

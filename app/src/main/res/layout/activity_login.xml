@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_background"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/b_wave27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type3"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/b_wave28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type1" />
+
+    <ImageView
+        android:id="@+id/b_wave29"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/googlesans_bold"
+            android:text="Inicia Sesion"
+            android:textColor="@color/BLANCO"
+            android:textSize="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/campoEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/campo_fondo3"
+                android:drawableEnd="@drawable/user_icon"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Email:"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint" />
+
+            <EditText
+                android:id="@+id/campoPass"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/campo_fondo3"
+                android:drawableEnd="@drawable/pass_icon"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Contraseña:"
+                android:inputType="textPassword"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint" />
+
+
+            <CheckBox
+                android:id="@+id/checkRecordarme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="24dp"
+                android:buttonTint="@color/MORADOOSCURO"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="Recuerdame"
+                android:textColor="@color/BLANCO"
+                android:textSize="18dp" />
+
+
+            <include
+                android:id="@+id/btnIniciarSesion"
+                layout="@layout/btn_cargando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/btnOlvidadoPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="¿Has olvidado tu cuenta?"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/contenedorRegistrate"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/carta_fondo">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="¿Todavia no tienes cuenta?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/noTengoCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="Registrate"
+                android:textColor="@color/MORADOOSCURO"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contenedorLoginEmpleado"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/carta_fondo">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="Trabajas para un local"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnIrLoginEmpleado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="Acceder"
+                android:textColor="@color/MORADOOSCURO"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

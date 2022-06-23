@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/galleryBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_background"
+    tools:context=".empresa.configEstab.ConfigurationGalleryFragment">
+
+    <ImageView
+        android:id="@+id/b_wave33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type3" />
+
+    <ImageView
+        android:id="@+id/b_wave34"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type1" />
+
+    <ImageView
+        android:id="@+id/b_wave35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bbgallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/galleria_imagenes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <Button
+            android:id="@+id/btnActualizarImagesGaleria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/MORADOOSCURO"
+            android:paddingLeft="50dp"
+            android:paddingTop="20dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="20dp"
+            android:text="Actualizar Galleria"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/galleria_imagenes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAgregarFotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="28dp"
+            android:clickable="true"
+            android:src="@drawable/add"
+            app:backgroundTint="@color/BLANCO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

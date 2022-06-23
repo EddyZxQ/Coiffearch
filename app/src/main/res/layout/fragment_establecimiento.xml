@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_background"
+    android:elevation="0dp"
+    android:orientation="vertical"
+    tools:context=".usuario.EstablecimientoFragment">
+
+
+    <ImageView
+        android:id="@+id/b_wave12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type3" />
+
+    <ImageView
+        android:id="@+id/b_wave13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type1" />
+
+    <ImageView
+        android:id="@+id/b_wave14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/box_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/box_estab"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                        android:id="@+id/carousel"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+
+
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        app:bottomShadowAlpha="0.6"
+
+                        app:bottomShadowHeight="64dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:showBottomShadow="true"
+                        app:showTopShadow="true"
+                        app:topShadowAlpha="0.6"
+                        app:topShadowHeight="32dp">
+
+                    </org.imaginativeworld.whynotimagecarousel.ImageCarousel>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/campoTituloE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/googlesans_medium"
+                                android:text="TextView"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <ToggleButton
+                                android:id="@+id/btnAgregarFav"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="false"
+                                android:background="@drawable/button_favorite"
+                                android:textOff=""
+                                android:textOn=""
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/campoHorarioE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:drawableStart="@drawable/calendario"
+                            android:fontFamily="@font/googlesans_medium"
+                            android:text="TextView"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/campoUbicacionE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:drawableStart="@drawable/location"
+                            android:fontFamily="@font/googlesans_medium"
+                            android:text="TextView"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/campoPublicoE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:fontFamily="@font/googlesans_medium"
+                            android:text="TextView"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/campoDescripcionE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:fontFamily="@font/googlesans_medium"
+                            android:text="TextView"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/campoEstadoE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/googlesans_medium"
+                            android:text="TextView"
+                            android:textColor="@color/MORADO_OBSCURO"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/diahora"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:fontFamily="@font/googlesans_medium"
+                            android:textColor="@color/black"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ContenedorAcciones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/listaSeleccionEmpleados"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnEscoger"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btncustom_estab"
+                        android:elevation="0dp"
+                        android:fontFamily="@font/googlesans_medium"
+                        android:padding="15dp"
+                        android:text="Escoger dia/hora"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:cornerRadius="10dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnEscogerServicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btncustom_estab"
+                        android:elevation="0dp"
+                        android:fontFamily="@font/googlesans_medium"
+                        android:padding="15dp"
+                        android:text="Escoga el servicio"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box_estab">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnPedirCita"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/btncustom_estab"
+                        android:backgroundTint="@color/MORADO_OBSCURO"
+                        android:elevation="0dp"
+                        android:fontFamily="@font/googlesans_black"
+                        android:minHeight="48dp"
+                        android:padding="15dp"
+                        android:text="Pedir Cita"
+                        android:textColor="@color/BLANCO"
+                        android:visibility="visible"
+                        app:cornerRadius="2dp"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

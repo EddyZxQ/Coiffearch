@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    tools:context=".empresa.AgregarCitaManualFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVolverAgenda"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btncustom_estab"
+        android:backgroundTint="@color/MORADO_GRADIENT_OSCURO"
+        android:elevation="0dp"
+        android:fontFamily="@font/googlesans_black"
+        android:minHeight="48dp"
+        android:padding="15dp"
+        android:text="Volver agenda"
+        android:textColor="@color/BLANCO"
+        android:visibility="visible"
+        app:cornerRadius="2dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/b_wave39"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type3" />
+
+    <ImageView
+        android:id="@+id/b_wave40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type1" />
+
+    <ImageView
+        android:id="@+id/b_wave41"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/campoPersona"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="48dp"
+            android:background="@drawable/campo_fondo3"
+            android:drawableEnd="@drawable/user_icon"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/googlesans_medium"
+            android:hint="Persona:"
+            android:inputType="textPersonName"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorHint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/campoFecha"
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:background="@drawable/campo_fondo3"
+                android:drawableEnd="@drawable/calendar"
+                android:drawableTint="@color/black"
+                android:editable="false"
+                android:focusable="false"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Fecha :"
+                android:inputType="text"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/campoHora"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/campo_fondo3"
+                android:drawableEnd="@drawable/time"
+                android:drawableTint="@color/black"
+                android:focusable="false"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Hora:"
+                android:inputType="text"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/campoServicio"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="48dp"
+            android:background="@drawable/campo_fondo3"
+            android:drawableEnd="@drawable/servicio"
+            android:drawableTint="@color/black"
+            android:focusable="false"
+            android:fontFamily="@font/googlesans_medium"
+            android:hint="Servicio:"
+            android:inputType="text"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorHint" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAgregarCita"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btncustom_estab"
+            android:backgroundTint="@color/MORADO_OBSCURO"
+            android:elevation="0dp"
+            android:fontFamily="@font/googlesans_black"
+            android:minHeight="48dp"
+            android:padding="15dp"
+            android:text="Agregar Cita"
+            android:textColor="@color/BLANCO"
+            android:visibility="visible"
+            app:cornerRadius="2dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginBottom="80dp" />
+    </LinearLayout>
+
+</RelativeLayout>

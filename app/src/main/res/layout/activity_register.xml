@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_background"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/b_wave30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type3" />
+
+    <ImageView
+        android:id="@+id/b_wave31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type1" />
+
+    <ImageView
+        android:id="@+id/b_wave32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/googlesans_bold"
+            android:text="Registrate"
+            android:textColor="@color/BLANCO"
+            android:textSize="26dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/camporREmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/campo_fondo3"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Email:"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint" />
+
+            <EditText
+                android:id="@+id/campoRUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/campo_fondo3"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Usuario:"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint" />
+
+            <EditText
+                android:id="@+id/campoRNombre"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/campo_fondo3"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Nombre:"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint" />
+
+            <EditText
+                android:id="@+id/campoRApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/campo_fondo3"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Apellidos:"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint" />
+
+
+            <EditText
+                android:id="@+id/campoRPass"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/campo_fondo3"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Contraseña:"
+                android:inputType="textPassword"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint" />
+
+            <EditText
+                android:id="@+id/campoRRepitePass"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/campo_fondo3"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Repite la contraseña:"
+                android:inputType="textPassword"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:text="Usuario"
+                    android:textColor="@color/BLANCO"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/radio_empresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:text="Empresa"
+                    android:textColor="@color/BLANCO"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RadioGroup>
+
+
+            <CheckBox
+                android:id="@+id/checkTerminosCondiciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:buttonTint="@color/MORADOOSCURO"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="Acepto los terminos y condiciones"
+                android:textColor="@color/BLANCO"
+                android:textSize="16sp" />
+
+            <include
+                android:id="@+id/btnRegistrarse"
+                layout="@layout/btn_cargando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/carta_fondo"
+        android:elevation="36dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="¿Ya tienes cuenta?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tengoCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="Iniciar Sesion"
+                android:textColor="@color/MORADOOSCURO"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

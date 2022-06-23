@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/perfilEmpresaFragment"
+        android:icon="@drawable/ic_user"
+        android:title="Perfil" />
+
+    <item
+        android:id="@+id/selectorLocalFragment"
+        android:icon="@drawable/libro"
+        android:title="Libro de Citas"/>
+
+    <item
+        android:id="@+id/verLocalesFragment"
+        android:icon="@drawable/panel"
+        android:title="Panel de Control" />
+
+</menu>

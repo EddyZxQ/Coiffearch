@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#2666CF</color>
+    <color name="teal_200">#0e5ad5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="gris_fondo">#FFFFFFFF</color>
+    <color name="azul">#FFFFFFFF</color>
+    <color name="NEGRO">#FF000000</color>
+    <color name="NARANJA">#FF000000</color>
+    <color name="azul_texto">#FF000000</color>
+
+
+
+
+    <color name="colorEditText">#14000000</color>
+    <color name="colorHint">#505050</color>
+
+    <color name="grey">#7a7a7a</color>
+    <color name="lightGrey">#aaaaaa</color>
+
+
+
+    <!--PALETTA DE COLORES -->
+
+    <color name="MORADO">#8A00FF</color>
+    <color name="MORADO_OBSCURO">#6500BB</color>
+    <color name="MORADO_GRADIENT_CLARO">#c076ff</color>
+    <color name="MORADO_GRADIENT_OSCURO">#9b66fe</color>
+    <color name="MORADOOSCURO">#3A3379</color>
+    <color name="BLANCO">#FDFDFD</color>
+    <color name="AZULCLARO">#D0DEFF</color>
+
+    <color name="MORADO_BOTONES">#8A00FF</color>
+
+   <color name="MORADOCLARO">#D8D8F8</color>
+   <!--  COLOR CASUAL  -->
+    <color name="AZUL">#2C8CFF</color>
+
+    <color name="btn_toggle">#3A3379</color>
+    <color name="btn_untoggle">#FFFFFF</color>
+
+
+
+
+</resources>

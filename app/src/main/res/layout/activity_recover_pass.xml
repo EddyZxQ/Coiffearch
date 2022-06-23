@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_background"
+    tools:context=".RecoverPassActivity">
+
+    <ImageView
+        android:id="@+id/b_wave36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type3" />
+
+    <ImageView
+        android:id="@+id/b_wave37"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type1" />
+
+    <ImageView
+        android:id="@+id/b_wave38"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/googlesans_bold"
+            android:text="Recuperacion Cuenta"
+            android:textColor="@color/BLANCO"
+            android:textSize="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/campoEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/campo_fondo3"
+                android:drawableEnd="@drawable/user_icon"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Email:"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint" />
+
+
+            <include
+                android:id="@+id/btnRecuperarCuenta"
+                layout="@layout/btn_cargando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/btnVolverLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="Volver al inicio de sesion"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_background"
+    tools:context=".empresa.empleados.AgregarEmpleadosFragment" >
+
+    <ImageView
+        android:id="@+id/b_wave42"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type3" />
+
+    <ImageView
+        android:id="@+id/b_wave43"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type1" />
+
+    <ImageView
+        android:id="@+id/b_wave44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_wave_type2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/campoNombre"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/campo_fondo3"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/googlesans_medium"
+            android:hint="Nombre:"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="26dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorHint" />
+
+        <EditText
+            android:id="@+id/campoEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/campo_fondo3"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/googlesans_medium"
+            android:hint="Email:"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:paddingRight="26dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorHint" />
+
+        <EditText
+            android:id="@+id/campoPass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:background="@drawable/campo_fondo3"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/googlesans_medium"
+            android:hint="Contraseña:"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="26dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorHint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/cHoraAperturaLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="4dp"
+
+                android:layout_weight="1"
+                android:background="@drawable/campo_fondo3"
+                android:clickable="true"
+                android:drawableTint="@color/black"
+                android:focusable="false"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Apertura:"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/cHoraCierreLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/campo_fondo3"
+                android:clickable="true"
+                android:drawableTint="@color/black"
+                android:focusable="false"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Cierre:"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/cServiciosLocal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/campo_fondo3"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:hint="Servicio:"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/cEstablecerPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:background="@drawable/campo_fondo3"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:hint="Precio:"
+                    android:inputType="textPersonName|numberDecimal"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAgregarServicio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:backgroundTint="@color/MORADOOSCURO"
+                android:fontFamily="@font/googlesans_black"
+                android:minHeight="48dp"
+                android:text="Agregar"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVerServiciosAgregados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:backgroundTint="@color/MORADOOSCURO"
+            android:fontFamily="@font/googlesans_black"
+            android:minHeight="48dp"
+            android:padding="15dp"
+            android:text="Ver Servicios"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cIntervaloEntreCitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="4dp"
+            android:background="@drawable/campo_fondo3"
+            android:clickable="true"
+            android:drawableTint="@color/black"
+            android:focusable="false"
+            android:fontFamily="@font/googlesans_medium"
+            android:hint="Tiempo entre citas:"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorHint"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/cTiempoInicioComida"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/campo_fondo3"
+                android:clickable="true"
+                android:drawableTint="@color/black"
+                android:focusable="false"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Inicio Comida:"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/cTiempoFinComida"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/campo_fondo3"
+                android:clickable="true"
+                android:drawableTint="@color/black"
+                android:focusable="false"
+                android:fontFamily="@font/googlesans_medium"
+                android:hint="Fin Comida:"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAgregarEmpleado"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/btncustom_estab"
+            android:backgroundTint="@color/MORADOOSCURO"
+            android:elevation="0dp"
+            android:fontFamily="@font/googlesans_black"
+            android:minHeight="48dp"
+            android:padding="15dp"
+            android:text="Agregar Empleado"
+            android:textColor="@color/BLANCO"
+            android:visibility="visible"
+            app:cornerRadius="2dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAtras"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btncustom_estab"
+            android:backgroundTint="@color/MORADOOSCURO"
+            android:elevation="0dp"
+            android:fontFamily="@font/googlesans_black"
+            android:minHeight="48dp"
+            android:padding="15dp"
+            android:text="Atras"
+            android:textColor="@color/BLANCO"
+            android:visibility="visible"
+            app:cornerRadius="2dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cartaServicio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:background="@color/BLANCO"
+    app:cardElevation="0dp">
+
+    <TextView
+        android:id="@+id/textoServicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linea_texto"
+        android:fontFamily="@font/googlesans_medium"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+</androidx.cardview.widget.CardView>

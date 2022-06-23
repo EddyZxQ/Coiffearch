@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_empresa"
+    app:startDestination="@id/perfilEmpresaFragment">
+
+    <fragment
+        android:id="@+id/perfilEmpresaFragment"
+        android:name="com.example.coiffearch.usuario.PerfilUsuarioFragment"
+        android:label="fragment_perfil_empresa"
+        tools:layout="@layout/fragment_perfil_empresa" />
+    <fragment
+        android:id="@+id/selectorLocalFragment"
+        android:name="com.example.coiffearch.empresa.SelectorLocalFragment"
+        android:label="SelectorLocalFragment"
+        tools:layout="@layout/fragment_selector_local"
+        >
+        <action
+            android:id="@+id/action_selectorLocalFragment_to_agendaEmpleadosFragment"
+            app:destination="@id/agendaEmpleadosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agendaFragment"
+        android:name="com.example.coiffearch.empresa.agenda.AgendaFragment"
+        android:label="AgendaFragment"
+        tools:layout="@layout/fragment_agenda">
+        <action
+            android:id="@+id/action_agendaFragment_to_agregarCitaManualFragment"
+            app:destination="@id/agregarCitaManualFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verLocalesFragment"
+        android:name="com.example.coiffearch.empresa.VerLocalesFragment"
+        android:label="VerLocalesFragment"
+        tools:layout="@layout/fragment_ver_locales">
+        <action
+            android:id="@+id/action_verLocalesFragment_to_configuracionFragment_empresa"
+            app:destination="@id/configuracionFragment2" />
+        <action
+            android:id="@+id/action_verLocalesFragment_to_nav_graph_empresa_agregar_estab2"
+            app:destination="@id/nav_graph_empresa_agregar_estab" />
+        <action
+            android:id="@+id/action_verLocalesFragment_to_empleadosFragment"
+            app:destination="@id/empleadosFragment" />
+    </fragment>
+    <include app:graph="@navigation/nav_graph_empresa_agregar_estab" />
+    <fragment
+        android:id="@+id/configuracionFragment2"
+        android:name="com.example.coiffearch.empresa.configEstab.ConfiguracionFragment"
+        android:label="ConfiguracionFragment" >
+        <action
+            android:id="@+id/action_configuracionFragment2_to_configurationGalleryFragment"
+            app:destination="@id/configurationGalleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configurationGalleryFragment"
+        android:name="com.example.coiffearch.empresa.configEstab.ConfigurationGalleryFragment"
+        android:label="fragment_configuration_gallery"
+        tools:layout="@layout/fragment_configuration_gallery" />
+    <fragment
+        android:id="@+id/agregarCitaManualFragment"
+        android:name="com.example.coiffearch.empresa.AgregarCitaManualFragment"
+        android:label="fragment_agregar_cita_manual"
+        tools:layout="@layout/fragment_agregar_cita_manual" />
+    <fragment
+        android:id="@+id/empleadosFragment"
+        android:name="com.example.coiffearch.empresa.empleados.EmpleadosFragment"
+        android:label="fragment_empleados"
+        tools:layout="@layout/fragment_empleados" >
+        <action
+            android:id="@+id/action_empleadosFragment_to_agregarEmpleadosFragment"
+            app:destination="@id/agregarEmpleadosFragment" />
+        <action
+            android:id="@+id/action_empleadosFragment_to_configurarEmpleadoFragment"
+            app:destination="@id/configurarEmpleadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarEmpleadosFragment"
+        android:name="com.example.coiffearch.empresa.empleados.AgregarEmpleadosFragment"
+        android:label="fragment_agregar_empleados"
+        tools:layout="@layout/fragment_agregar_empleados" />
+    <fragment
+        android:id="@+id/configurarEmpleadoFragment"
+        android:name="com.example.coiffearch.empresa.empleados.ConfigurarEmpleadoFragment"
+        android:label="fragment_configurar_empleado"
+        tools:layout="@layout/fragment_configurar_empleado" />
+    <fragment
+        android:id="@+id/agendaEmpleadosFragment"
+        android:name="com.example.coiffearch.empresa.agenda.AgendaEmpleadosFragment"
+        android:label="AgendaEmpleadosFragment" >
+        <action
+            android:id="@+id/action_agendaEmpleadosFragment_to_agendaFragment"
+            app:destination="@id/agendaFragment" />
+    </fragment>
+</navigation>

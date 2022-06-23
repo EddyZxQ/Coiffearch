@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnCargando"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/MORADOOSCURO"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp">
+
+    <TextView
+        android:id="@+id/btntexto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="@font/googlesans_medium"
+        android:gravity="center"
+        android:textColor="@color/BLANCO"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/cargando"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:paddingVertical="5dp"
+        android:visibility="invisible" />
+</androidx.cardview.widget.CardView>

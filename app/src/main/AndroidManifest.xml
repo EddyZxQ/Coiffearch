@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coiffearch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".preferencias.CoiffearchApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logocoiffearch"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logocoiffearch_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Coiffearch">
+        <activity
+            android:name=".empleados.EmpleadoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmpleadoLoginActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".Notification"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".RecoverPassActivity"
+            android:exported="false"
+            android:theme="@style/Theme.statusBarMorada" />
+        <activity
+            android:name=".empresa.PanelEmpresaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.statusBarMorada"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".usuario.PanelUsuarioActivity"
+            android:exported="false"
+            android:theme="@style/Theme.statusBarMorada"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".CoiffearchSplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.statusBarGradientPurple">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.statusBarMorada" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.statusBarMorada" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

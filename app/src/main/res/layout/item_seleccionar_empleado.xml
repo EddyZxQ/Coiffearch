@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartaMisCasas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="@color/BLANCO"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imgCasa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="matrix" />
+
+        <TextView
+            android:id="@+id/idNombreEmpleado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/googlesans_medium"
+            android:gravity="center|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="rnjewgowjghoiwhjwpo09j" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

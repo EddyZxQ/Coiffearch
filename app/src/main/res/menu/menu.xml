@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/panelPerfilFragment"
+        android:icon="@drawable/ic_user"
+        android:title="Perfil" />
+    <item
+        android:id="@+id/panelfavoritosFragment"
+        android:icon="@drawable/ic_favorito"
+        android:title="Favoritos"/>
+
+    <item
+        android:id="@+id/panelcitasFragment"
+        android:icon="@drawable/ic_reservas"
+        android:title="Reservas" />
+
+
+    <item
+        android:id="@+id/panelbusquedaFragment"
+        android:icon="@drawable/ic_busqueda"
+        android:title="Busqueda"/>
+
+
+</menu>
