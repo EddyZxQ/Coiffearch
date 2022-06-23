@@ -2,7 +2,7 @@
 ![CoiffEarch](https://user-images.githubusercontent.com/24995646/175404501-5432e2c2-21f4-4f34-8bfb-6f36563f2f7e.png)
 
 
-En resumidas cuentas es un sistema de reserva y gestion  de citas y forma parte de PFG (Proyecto Fin Grado).
+En resumidas cuentas es un sistema de reserva y gestion  de citas y forma parte de mi PFG (Proyecto Fin Grado).
 
 
 
