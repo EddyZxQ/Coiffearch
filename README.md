@@ -33,7 +33,7 @@ La aplicación está disponible en dos idiomas, inglés y el español.
 
 ## PFG
 
-** Atraves del siguiente enlace podeis mi proyecto de fin de grado **
+** Atraves del siguiente enlace podeis descargar mi proyecto de fin de grado **
 <br>
 PFG -> https://drive.google.com/drive/folders/1gGSxqWDj0i-VoYv7GEir1ZjjlFW2SsnL?usp=sharing
 
@@ -42,5 +42,4 @@ PFG -> https://drive.google.com/drive/folders/1gGSxqWDj0i-VoYv7GEir1ZjjlFW2SsnL?
 ** Redes Sociales **
 
 * YouTube 📹 : https://www.youtube.com/channel/UC4Bp0euKLbYgoGeJopYTlVg
-* Instagram 📸 : https://www.instagram.com/midu.dev/
 * Github 🐙: https://github.com/EddyZxQ
