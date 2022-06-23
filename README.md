@@ -20,7 +20,7 @@ En resumidas cuentas es un sistema de reserva y gestion  de citas y forma parte 
 - Crear locales y gestionar la presentación de estos al publico.
 - Agregar y eliminar empleados en tu local.
 - Listado de las citas del usuario.
-- Gestionar los servicios que ofreces al público y el precio de los mismos. 
+- Gestionar los servicios que ofreces al público y el precio de los mismos. 
 - Gestionar la agenda de los diferentes empleados o en caso de no tenerlos gestionar tu agenda propia.
 
 ### Empleado
@@ -34,6 +34,7 @@ La aplicación está disponible en dos idiomas, inglés y el español.
 ## PFG
 
 ** Atraves del siguiente enlace podeis mi proyecto de fin de grado **
+<br>
 PFG -> https://drive.google.com/drive/folders/1gGSxqWDj0i-VoYv7GEir1ZjjlFW2SsnL?usp=sharing
 
 
